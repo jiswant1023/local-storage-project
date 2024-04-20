@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Auto Save Textarea</h1>
-        <textarea name="textarea" id="text_field" cols="50" rows="20" placeholder="enter text..."></textarea>
+    <div class="container">
+      <h1>User Card</h1>
+      <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+  
+        <label for="village">Village:</label>
+        <input type="text" id="village" name="village" required>
+  
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+  
+        <button type="submit">Save</button>
+        
+      </form>
+      <button id="clear">Clear All</button>
+  
+      <div class="card" id="userCard"></div>
     </div>
-
+  
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
